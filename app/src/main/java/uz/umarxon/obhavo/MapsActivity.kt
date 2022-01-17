@@ -40,7 +40,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var fusedLocatedProviderClient: FusedLocationProviderClient
     private var model: WeatherModel? = null
     private lateinit var requestQueue: RequestQueue
-    private var MY_API_KEY = ""
+    private var MY_API_KEY = "6d84d89d5bf6e7b6cc1300dd9ac165f1"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -102,7 +102,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     var a = getAddressFromLatLng(this, LatLng(map2.latitude, map2.longitude))
 
                     if (a != null) {
-                        if (a.isEmpty()){
+                        if (a.trim().isEmpty()){
                             a = "${ map2.latitude } ${map2.longitude}"
                         }
                     }

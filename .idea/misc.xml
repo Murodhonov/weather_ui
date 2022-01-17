@@ -11,6 +11,11 @@
         <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/fragment_item.xml" value="0.264" />
         <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/fragment_maps.xml" value="0.2713541666666667" />
         <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/save_dialog.xml" value="0.264" />
+        <entry key="..\:/Android_Studio/Projects/weather_ui/app/src/main/res/layout/activity_main.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android_Studio/Projects/weather_ui/app/src/main/res/layout/fragment_home.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android_Studio/Projects/weather_ui/app/src/main/res/layout/fragment_item.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android_Studio/Projects/weather_ui/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2875" />
+        <entry key="..\:/Android_Studio/Projects/weather_ui/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2875" />
       </map>
     </option>
   </component>
