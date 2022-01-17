@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/drawable/bg.xml" value="0.2869791666666667" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/drawable/tab_indicator_bg.xml" value="0.2825641025641026" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/activity_maps.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/fragment_home.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/fragment_item.xml" value="0.264" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/fragment_maps.xml" value="0.2713541666666667" />
+        <entry key="..\:/Android_Studio/Projects/Obhavo/app/src/main/res/layout/save_dialog.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
