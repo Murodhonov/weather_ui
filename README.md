@@ -11,4 +11,4 @@ Requirement:
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
 
-* Based on [Jetpack Compose](https://developer.android.com/jetpack/compose) and [openweathermap.org](https://openweathermap.org/), built for the [Jetpack Compose challenge](https://developer.android.com/dev-challenge) week 4.
+* Based on [Jetpack Compose](https://developer.android.com/jetpack/compose) and [openweathermap.org](https://openweathermap.org/)
