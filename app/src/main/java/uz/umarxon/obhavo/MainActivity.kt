@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var requestQueue: RequestQueue
     lateinit var binding: ActivityMainBinding
     lateinit var fusedLocatedProviderClient: FusedLocationProviderClient
-    var MY_API_KEY = ""//Replace with your openweather api key
+    var MY_API_KEY = "6d84d89d5bf6e7b6cc1300dd9ac165f1"//Replace with your openweather api key
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
