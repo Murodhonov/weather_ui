@@ -1,6 +1,6 @@
 ![GitHub Cards Preview](https://raw.githubusercontent.com/Murodhonov/weather_ui/master/Images/images12.png?raw=true)
 
-# C-Weather: Compose with weather
+# Weather UI
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 
