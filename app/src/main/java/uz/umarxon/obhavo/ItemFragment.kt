@@ -45,30 +45,6 @@ class ItemFragment(var model: WeatherModel) : Fragment() {
                 binding.weatherView.setWeatherData(PrecipType.SNOW)
             }
         }
-        /*when {
-            model.weather[0].description.contains("rain") -> {
-                binding.weatherView.setWeatherData(PrecipType.RAIN)
-                binding.logotip.setImageResource(R.drawable.rain)
-            }
-            model.weather[0].description.contains("Atmosphere") || model.weather[0].description.contains("thunderstorm")-> {
-                binding.weatherView.setWeatherData(PrecipType.RAIN)
-                binding.logotip.setImageResource(R.drawable.tornado)
-            }
-            model.weather[0].description.contains("very heavy rain") ||model.weather[0].description.contains("shower rain") -> {
-                binding.weatherView.setWeatherData(PrecipType.RAIN)
-                binding.logotip.setImageResource(R.drawable.chanserain)
-            }
-            model.weather[0].description.contains("few clouds") || model.weather[0].description.contains("scattered clouds")|| model.weather[0].description.contains("broken clouds")-> {
-                binding.logotip.setImageResource(R.drawable.chanserain)
-            }
-            model.weather[0].description.contains("snow") -> {
-                binding.weatherView.setWeatherData(PrecipType.SNOW)
-                binding.logotip.setImageResource(R.drawable.snow)
-            }
-            else -> {
-                binding.weatherView.setWeatherData(PrecipType.CLEAR)
-            }
-        }*/
 
         return binding.root
     }
