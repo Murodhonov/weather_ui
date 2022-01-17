@@ -11,5 +11,4 @@ Requirement:
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
 
-* Neumorphism simple weather app that support different temperature units and cities.
 * Based on [Jetpack Compose](https://developer.android.com/jetpack/compose) and [openweathermap.org](https://openweathermap.org/), built for the [Jetpack Compose challenge](https://developer.android.com/dev-challenge) week 4.
