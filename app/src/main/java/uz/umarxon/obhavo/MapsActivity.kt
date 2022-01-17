@@ -10,8 +10,6 @@ import android.location.Location
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
-import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
@@ -29,7 +27,6 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.tasks.Task
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.fragment_item.view.*
 import kotlinx.android.synthetic.main.save_dialog.view.*
 import uz.umarxon.obhavo.Data.MySharedPreference
 import uz.umarxon.obhavo.databinding.ActivityMapsBinding
@@ -40,9 +37,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
-    lateinit var fusedLocatedProviderClient: FusedLocationProviderClient
-    var model: WeatherModel? = null
-    lateinit var requestQueue: RequestQueue
+    private lateinit var fusedLocatedProviderClient: FusedLocationProviderClient
+    private var model: WeatherModel? = null
+    private lateinit var requestQueue: RequestQueue
+    private var MY_API_KEY = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,14 +68,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-    @SuppressLint("MissingPermission")
+    @SuppressLint("MissingPermission", "InflateParams")
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
         val locationTask: Task<Location> = fusedLocatedProviderClient.lastLocation
-        locationTask.addOnSuccessListener {
+        locationTask.addOnSuccessListener { it ->
             if (it != null) {
-                Log.d("Murodhonov", "deviceLocation: ${it.toString()}")
+                Log.d("Murodhonov", "deviceLocation: $it")
 
                 val location1 = LatLng(it.latitude, it.longitude)
                 mMap.addMarker(
@@ -137,7 +135,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-    fun getAddressFromLatLng(context: Context?, latLng: LatLng): String? {
+    private fun getAddressFromLatLng(context: Context?, latLng: LatLng): String? {
         val geocoder: Geocoder
         val addresses: List<Address>
         geocoder = Geocoder(context, Locale.getDefault())
@@ -153,7 +151,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private fun loading(lat: Double, lon: Double, unit: String) {
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET,
-            "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=6d84d89d5bf6e7b6cc1300dd9ac165f1&units=${unit}",
+            "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${MY_API_KEY}&units=${unit}",
             null,
             { response ->
                 if (response != null) {
