@@ -35,7 +35,7 @@ class ItemFragment(var model: WeatherModel) : Fragment() {
         binding.sunset.text = "${SimpleDateFormat("hh:mm a").format(Date(sunset*1000))}"
         binding.wind.text = model.wind.speed.toString()+"k/h"
 
-        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/valyutalaruz.appspot.com/o/${model.weather[0].icon}.png?alt=media&token=83e8cd24-21d0-4faf-82e3-898f062d6c22").into(binding.logotip)
+        Picasso.get().load("http://openweathermap.org/img/wn/${model.weather[0].icon}@2x.png").into(binding.logotip)
 
         when {
             model.weather[0].description.contains("rain") -> {
